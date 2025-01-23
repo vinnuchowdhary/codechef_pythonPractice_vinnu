@@ -1,0 +1,5 @@
+N=int(input())
+if N==16 or N==17 or N==18:
+    print("ADVITIYA")
+else:
+    print("WAITING FOR ADVITIYA")
