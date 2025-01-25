@@ -1,0 +1,21 @@
+for i in range (int(input())):
+    n1=input().split()
+    n=int(n1[0])
+    l=int(n1[1])
+    r=int(n1[2])
+    k=input().split()
+    a=[]
+    for i in k:
+        a.append(int(i))
+    b=[]
+    happy=0
+    b.append(happy)
+    for i in range (n):
+        # if ((a[i]>l or a[i]==i) and (a[i]<r or a[i]==r)):
+        if l<=a[i]<=r:
+            happy+=1
+        else:
+            happy-=1
+        b.append(happy)
+    print(max(b),end=' ')
+    print(min(b))
