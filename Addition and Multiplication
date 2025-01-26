@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int a,b,x;
+	scanf("%d %d %d",&a,&b,&x);
+	if(x==1)
+	{
+	    printf("%d\n",a+b);
+	}
+	else if(x==2)
+	{
+	    printf("%d\n",a*b);
+	}
+
+}
