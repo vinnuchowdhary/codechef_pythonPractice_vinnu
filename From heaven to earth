@@ -1,0 +1,9 @@
+import math
+T = int(input())
+
+for tc in range (T):
+    N,V1,V2 = map(int, input().split())
+    if(N*math.sqrt(2)/V1 > 2*N/V2):
+        print('Elevator')
+    else:
+        print('Stairs')
