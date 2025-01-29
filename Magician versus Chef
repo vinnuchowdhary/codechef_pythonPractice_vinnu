@@ -1,0 +1,10 @@
+t = int(input())
+for _ in range(t):
+    Box_num, Coin_box, Swap_num = map(int, input().split())
+    for __ in range(Swap_num):
+        A_Box, B_Box = map(int, input().split())
+        if A_Box == Coin_box:
+            Coin_box = B_Box
+        elif B_Box == Coin_box:
+            Coin_box = A_Box
+    print(Coin_box)
